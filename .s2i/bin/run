@@ -1,2 +1,2 @@
 #!/bin/bash                                                                                                                                                                                    
-exec /wildfly/bin/standalone.sh -b `hostname -i` -bmanagement 0.0.0.0 -u 230.0.0.4 -Djboss.messaging.cluster.password=clusterpass
+exec /wildfly/bin/standalone.sh -b `hostname -i` -Djboss.node.name=`hostname -i` -bmanagement 0.0.0.0 -u 230.0.0.4 -Djboss.messaging.cluster.password=clusterpass
